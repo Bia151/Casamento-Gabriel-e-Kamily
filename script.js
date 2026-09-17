@@ -1,6 +1,11 @@
 const form = document.getElementById('rsvpForm');
 const formMessage = document.getElementById('formMessage');
 
+document.querySelectorAll('.gift-button').forEach((button) => {
+  button.setAttribute('target', '_blank');
+  button.setAttribute('rel', 'noopener noreferrer');
+});
+
 const targetDate = new Date('2027-02-07T17:30:00');
 
 const updateCountdown = () => {
