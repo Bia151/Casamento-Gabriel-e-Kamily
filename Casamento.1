@@ -7,7 +7,7 @@
       name="description"
       content="Convite de casamento com confirmação de presença e detalhes da cerimônia."
     />
-    <title>Seu Nome & Seu Nome | Convite</title>
+    <title>Seu Nome &amp; Seu Nome | Convite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,23 +17,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <span>Seu Nome & Seu Nome</span>
-        <a href="#confirmacao">RSVP</a>
-      </div>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegação principal">
+        <div class="brand">Seu Nome &amp; Seu Nome</div>
+        <div class="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#cerimonia">Cerimônia</a>
+          <a href="#jantar">Jantar</a>
+          <a href="#presentes">Presentes</a>
+          <a href="#confirmacao">Confirme</a>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
+        <div class="hero-content container">
+          <div class="hero-date">12 | 10 | 2026</div>
           <p class="eyebrow">Você está convidado para</p>
-          <h1>Seu Nome & Seu Nome</h1>
-          <p class="date">12 de outubro de 2026</p>
+          <h1>Seu Nome &amp; Seu Nome</h1>
           <p class="subtitle">
-            Com muita alegria, nós convidamos você para celebrar o início da nossa
-            história juntos em um dia cheio de amor, carinho e muita felicidade.
+            Com muita alegria, convidamos você para celebrar o início da nossa
+            história e compartilhar um momento cheio de amor, carinho e felicidade.
           </p>
           <div class="cta-group">
             <a class="button primary" href="#confirmacao">Confirmar presença</a>
@@ -42,15 +47,39 @@
         </div>
       </section>
 
-      <section class="section intro-text">
-        <div class="container narrow">
+      <section class="countdown-section">
+        <div class="container">
+          <div class="countdown-label">Contagem regressiva</div>
+          <div class="countdown" id="countdown">
+            <div class="time-box">
+              <span id="days">00</span>
+              <small>Dias</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span>
+              <small>Horas</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <small>Minutos</small>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <small>Segundos</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome-section section">
+        <div class="container narrow text-center">
           <p class="section-tag">Nossa história</p>
           <h2>Um momento especial para compartilhar com você</h2>
           <p>
-            Este é um convite para celebrar um dos dias mais emocionantes da nossa
-            vida: o dia em que prometemos amor, companheirismo e uma vida inteira
-            juntos. A presença de pessoas tão queridas torna esse momento ainda mais
-            lindo.
+            Este é um convite para celebrar um dos dias mais emocionantes da
+            nossa vida: o dia em que prometemos amor, companheirismo e uma vida
+            inteira juntos. A presença de pessoas tão queridas torna esse momento
+            ainda mais lindo.
           </p>
           <p>
             Esperamos celebrar com você um momento de alegria, emoção e muita festa.
@@ -59,63 +88,70 @@
         </div>
       </section>
 
-      <section id="cerimonia" class="section alt">
-        <div class="container">
-          <div class="section-heading">
+      <section id="cerimonia" class="section ceremony">
+        <div class="container ceremony-wrap">
+          <div class="image-panel">
+            <img
+              src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80"
+              alt="Detalhes da cerimônia"
+            />
+          </div>
+          <div class="content-panel">
             <p class="section-tag">Cerimônia</p>
             <h2>O momento mais importante</h2>
-          </div>
-
-          <div class="info-grid">
-            <div class="info-card">
-              <h3>Data</h3>
-              <p>12 de outubro de 2026</p>
+            <p>
+              Queremos muito viver esse instante ao seu lado. A cerimônia será
+              especial, íntima e cheia de emoção, e a sua presença tornará o nosso
+              dia ainda mais memorável.
+            </p>
+            <div class="event-list">
+              <div>
+                <span>📅</span>
+                <p>12 de outubro de 2026</p>
+              </div>
+              <div>
+                <span>🕊️</span>
+                <p>16h30</p>
+              </div>
+              <div>
+                <span>📍</span>
+                <p>Nome do local — Cidade, Estado</p>
+              </div>
             </div>
-            <div class="info-card">
-              <h3>Horário</h3>
-              <p>16h30</p>
-            </div>
-            <div class="info-card">
-              <h3>Local</h3>
-              <p>Nome do local</p>
-            </div>
-            <div class="info-card">
-              <h3>Endereço</h3>
-              <p>Rua do Amor, 123 - Cidade</p>
-            </div>
+            <p class="dress-note">
+              Como a cerimônia será ao ar livre, recomendamos roupas leves e calçados
+              confortáveis para aproveitar cada momento com tranquilidade.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="jantar" class="section">
-        <div class="container">
-          <div class="section-heading">
+      <section id="jantar" class="section dinner">
+        <div class="container dinner-wrap">
+          <div class="content-panel">
             <p class="section-tag">Jantar &amp; Festa</p>
             <h2>Uma noite para celebrar</h2>
+            <p>
+              Depois da cerimônia, vamos celebrar com um jantar delicioso, música,
+              boa conversa e muita alegria. A noite será um momento de celebração e
+              felicidade ao lado das pessoas que amamos.
+            </p>
+            <p>
+              Queremos que todos desfrutem de um ambiente acolhedor e especial,
+              repleto de emoção, carinho e momentos inesquecíveis.
+            </p>
           </div>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <span>16h30</span>
-              <h3>Cerimônia</h3>
-              <p>Recepção e início da celebração com música e fotos.</p>
-            </div>
-            <div class="timeline-item">
-              <span>18h00</span>
-              <h3>Jantar</h3>
-              <p>Momento de confraternização e pratos especiais para todos.</p>
-            </div>
-            <div class="timeline-item">
-              <span>20h30</span>
-              <h3>Festa</h3>
-              <p>Danças, música, pista e muita alegria até o fim da noite.</p>
-            </div>
+          <div class="image-panel">
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+              alt="Jantar e festa"
+            />
           </div>
         </div>
       </section>
 
-      <section id="presentes" class="section alt">
-        <div class="container narrow">
+      <section id="presentes" class="section gifts">
+        <div class="container narrow text-center">
           <p class="section-tag">Lista de presentes</p>
           <h2>Seu carinho é o melhor presente</h2>
           <p>
@@ -123,6 +159,7 @@
             quiserem contribuir para a nossa casa e para o início dessa nova etapa,
             teremos uma lista de presentes com itens e sugestões especiais.
           </p>
+
           <div class="gift-box">
             <p>Link da lista:</p>
             <strong>insira o link da sua lista de presentes</strong>
@@ -149,7 +186,7 @@
             </div>
 
             <div class="field-group">
-              <label for="confirmacao">Confirmação</label>
+              <label for="confirmacao">Você irá ao evento?</label>
               <select id="confirmacao" name="confirmacao" required>
                 <option value="">Selecione</option>
                 <option value="sim">Confirmo minha presença</option>
@@ -158,16 +195,21 @@
             </div>
 
             <div class="field-group">
-              <label for="convidados">Número de convidados</label>
+              <label for="convidados">Quantidade de adultos</label>
               <input id="convidados" name="convidados" type="number" min="1" max="10" value="1" />
             </div>
 
             <div class="field-group full">
-              <label for="mensagem">Mensagem</label>
+              <label for="mensagem">Observações</label>
               <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe uma mensagem para os noivos"></textarea>
             </div>
 
-            <button type="submit" class="button primary full-width">Enviar confirmação</button>
+            <div class="checkbox-row full">
+              <input type="checkbox" id="newsletter" checked />
+              <label for="newsletter">Quero receber informações importantes sobre o casamento.</label>
+            </div>
+
+            <button type="submit" class="button primary full-width">Confirmar presença</button>
           </form>
 
           <p id="formMessage" class="form-message" aria-live="polite"></p>
@@ -175,9 +217,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <div class="container footer-content">
-        <p>Com amor, Seu Nome &amp; Seu Nome</p>
+        <p>Com amor, <strong>Seu Nome &amp; Seu Nome</strong></p>
       </div>
     </footer>
 
